@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="data/topojson.min.js"></script>
+    <script src="js/map.js"></script>
+    <title>HW4</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: darkgray;
+        width: 100%;
+        height: 100%;
+      }
+      h2{
+        text-align: center;
+        font-weight: inherit;
+      }
+      h3{
+        text-align: center;
+        font-weight: inherit;
+      }
+      svg{
+        padding: 40px;
+      }
+      .h2{
+        width:100%;
+      }
+      .h2:hover {
+        background-color: yellow;
+        font-weight: bold;
+      }
+      .small {
+        font: italic 12px sans-serif;
+      }
+      .large {
+        font: bold 16px sans-serif;
+      }
+      .fill{
+        fill: darkred;
+      }
+      .gold {
+          fill: #FFD700;
+          opacity: .8;
+          stroke: #252525;
+          stroke-width: 2px;
+      }
+      path{
+        stroke: black;
+        fill: none;
+        stroke-width: 1;
+      }
+      rect{
+        fill: lightblue;
+      }
+      rect:hover{
+        fill: red;
+      }
+      .flexSpace{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .graphLine{
+        stroke-width: 2;
+      }
+      .select{
+        padding-top: 15px;
+        padding-left: 10px;
+        align-self: center;
+      }
+      .infoPanel{
+        border-style: double;
+        width: 90%;
+      }
+      .grat {
+          stroke: grey;
+          stroke-width: 1px;
+          opacity: .2;
+      }
+      .countries {
+          stroke: #f7f7f7;
+          fill: #d9d9d9;
+      }
+      .view {
+          padding: 0.5em;
+      }
+      #infoSVG{
+        padding-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="h2"><h2>CS-5820 Homework 4</h2></div>
+      <div class="h2"><h2>Kaden Hart</h2></div>
+      <div class="h2"><h2>Sally Devitry</h2></div>
+    </header>
+    <h2>Happiness Score by Country and Year. </h2>
+    <div class="flexSpace">
+      <div class="barChartArea">
+        <h3>Three Most and Least Happy Countries. </h3>
+        <div class="select">
+          <label for="yearDropdown">Choose a Year:</label>
+          <select name="year" id="yearDropdown" onchange="getValueAndUpdate(this)">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+
+        <svg height="400" width="300" id="barSVG"></svg>
+      </div>
+      <div class="mapArea">
+        <h3>Choose A Bar To See Where That Country Is!</h3>
+        <svg width="600" height="400">
+          <g transform="scale(.67)">
+            <g id="map">   </g>
+            <g id="points"></g>
+          </g>
+        </svg>
+      </div>
+      <div class="infoPanel">
+        <h3>Info Panel </h3>
+        <svg id="infoSVG"  width="600" height="290"></svg>
+      </div>
+    </div>
+
+    <script onload="init()" src="main.js"></script>
+  </body>
+</html>

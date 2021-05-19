@@ -1,0 +1,49 @@
+Abbreviation,State,Region,Row,Column
+MN,Minnesota,Midwest,2,5
+WI,Wisconsin,Midwest,2,7
+IL,Illinois,Midwest,2,6
+OH,Ohio,Midwest,3,7
+MO,Missouri,Midwest,4,5
+NH,New Hampshire,Northeast,1,11
+NY,New York,Northeast,2,9
+RI,Rhode Island,Northeast,2,10
+MA,Massachusetts,Northeast,2,11
+PA,Pennsylvania,Northeast,3,8
+NJ,New Jersey,Northeast,3,9
+CT,Connecticut,Northeast,3,10
+DE,Delaware,Northeast,5,9
+KY,Kentucky,South,4,6
+WV,West Virginia,South,4,7
+MD,Maryland,South,4,9
+VA,Virginia,South,4,8
+AR,Arkansas,South,5,5
+TN,Tennessee,South,5,6
+NC,North Carolina,South,5,7
+SC,South Carolina,South,5,8
+OK,Oklahoma,South,6,4
+LA,Louisiana,South,6,5
+MS,Mississippi,South,6,6
+AL,Alabama,South,6,7
+GA,Georgia,South,6,8
+TX,Texas,South,7,4
+FL,Florida,South,7,9
+WA,Washington,West,2,1
+MT,Montana,West,2,3
+ID,Idaho,West,2,2
+WY,Wyoming,West,3,3
+OR,Oregon,West,3,1
+NV,Nevada,West,3,2
+CA,California,West,4,1
+UT,Utah,West,4,2
+AZ,Arizona,West,5,2
+NM,New Mexico,West,5,3
+ND,North Dakota,Midwest,2,4
+MI,Michigan,Midwest,2,8
+SD,South Dakota,Midwest,3,4
+IA,Iowa,Midwest,3,5
+IN,Indiana,Midwest,3,6
+NE,Nebraska,Midwest,4,4
+KS,Kansas,Midwest,5,4
+ME,Maine,Northeast,0,11
+VT,Vermont,Northeast,1,10
+CO,Colorado,West,4,3

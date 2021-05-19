@@ -1,0 +1,140 @@
+<!-- CS-5890 Homework 5   -->
+<!-- Sally Devitry & Brandon Larsen  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HW 5</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+      text {
+        pointer-events: none;
+      }
+      body {
+        margin: 0;
+      }
+      .whiteHeader {
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #586f7c;
+        width: 100%;
+        height: 100%;
+      }
+      label {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        font-weight: inherit;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      svg {
+        align-items: center;
+        padding: 30px;
+      }
+      .small {
+        font: italic 12px sans-serif;
+      }
+      .large {
+        font: bold 16px sans-serif;
+      }
+      rect {
+        fill: lightblue;
+      }
+
+      rect:hover {
+        fill: rgb(255, 217, 0);
+      }
+
+      .flexSpace {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .select {
+        padding-top: 15px;
+        padding-left: 10px;
+        align-self: center;
+      }
+      .infoPanel {
+        border-style: double;
+        width: 90%;
+      }
+      .tablewrapper {
+        /* margin: 25px; */
+        /* padding: 15px; */
+        max-height: 600px;
+        overflow: auto;
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      th {
+        /* padding: 10px; */
+        background-color: #586f7c;
+        color: white;
+        font-size: 14pt;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+      tr {
+        margin: 0px;
+      }
+      td {
+        border: 1px solid black;
+        margin: 0px;
+        padding: 5px;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(189, 189, 189);
+        margin: 5px;
+      }
+      #infoSVG {
+        padding-top: 0px;
+      }
+      img {
+        margin-left: 8px;
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="whiteHeader">Origins of Programming Languages</h1>
+      </div>
+    </header>
+    <div class="flexSpace">
+      <div>
+      <h3>Average Programming Language Popularity</h3>
+      <div class="tablewrapper">
+        <table id="table" class="table"></table>
+      </div>
+    </div>
+      <div class="graphArea">
+        <h3>Origination of programming languages (2004 - 2020)</h3>
+        <h4>
+          A child/parent node relationship means the child was written in the
+          parent language.
+        </h4>
+        <svg id="treeSVG" width="600" height="600"></svg>
+      </div>
+    </div>
+    <script src="js/barchart.js"></script>
+    <script src="js/table.js"></script>
+    <script onload="init()" src="main.js"></script>
+  </body>
+</html>

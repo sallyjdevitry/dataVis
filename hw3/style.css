@@ -1,0 +1,12 @@
+rect {
+    fill: hsl(204, 86%, 53%);
+    stroke-width: 0;
+}
+svg {
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.area {
+    fill: steelblue;
+    stroke: steelblue;
+  }

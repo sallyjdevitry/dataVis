@@ -1,0 +1,34 @@
+<!-- CS-5890 Homework 6 -->
+<!-- Sally Devitry & Jared Knutti  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HW 5</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="whiteHeader">Fatal Police Shootings by State</h1>
+      </div>
+    </header>
+    <div class="flexSpace">
+      <div>
+        <div>
+          <svg id='timelineSVG' width="900" height="200"></svg>
+          <svg id="raceSVG" width="900" height="400"></svg>
+          <svg id="infoSVG" width="340" height="340">
+          </svg>
+          <svg id="chartSVG" width="1500" height="200"></svg>
+        <svg id="mapSVG" width="1000" height="1000">
+        </svg>
+      </div>
+    </div>
+    <script src="tile-map.js"></script>
+    <script src="brush-bar-info.js"></script>
+    <script onload="init()" src="main.js"></script>
+  </body>
+</html>

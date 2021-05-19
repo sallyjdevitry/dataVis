@@ -1,0 +1,39 @@
+<!-- CS-5820 Homework 3 -->
+<!-- Sally Devitry -->
+<!-- sallyjdevitry@aggiemail.usu.edu -->
+<!-- A01980316 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> HW-4 CS 5820 </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body id="body">
+    <h2>Choose the data you'd like to see:</h2>
+    <button id="button1" onclick="loadDataset('police')">Fatal Police Shootings (Table 1)</button>
+    <button id="button2" onclick="loadDataset('tweets')">Trump Tweets (Table 2)</button>
+    <button id="button3" onclick="loadDataset('covid')">Covid-19 Cases (Table 3)</button>
+    <button id="button4" onclick="loadDataset('fires')">Top California Wildfires (Table 4)</button>
+    <br>
+    <br>
+
+    <div id="myDiv" hidden="true">
+        <span>Filter data:</span>
+        <select name="choices" id="choices">
+        </select>
+    </div>
+
+    <svg id="chart" width="700" height="600">
+        <g id="noTranslate">
+        <g id="chartgroup" transform="translate(0, 500) scale(1, -1)">
+        </g>
+    </g>
+    </svg>
+</body>
+</html>
